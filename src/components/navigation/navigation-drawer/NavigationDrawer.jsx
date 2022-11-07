@@ -21,14 +21,14 @@ const NavigationDrawer = () => {
         </div>
       </NavLink>
       <NavLink
-        to="explore"
+        to="Editorial"
         className={({ isActive }) =>
           isActive ? "dark:bg-blue-700 bg-blue-500 text-white rounded" : ""
         }
       >
         <div className="dark:hover:bg-blue-700 hover:bg-blue-500 hover:text-white p-2 rounded">
           <ExploreIcon sx={{ fontSize: 32 }} />
-          <span className="ml-2">Explore</span>
+          <span className="ml-2">Editorial</span>
         </div>
       </NavLink>
       <NavLink

@@ -12,7 +12,7 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
     <div className="h-16 z-50 dark:bg-slate-800 bg-white flex items-center">
       <Link to="">
         <span className="ml-6 text-[2rem] dark:text-blue-700 text-blue-500 font-bold italic">
-          Stalk-Me
+          CodeQuest
         </span>
       </Link>
       {token ? (

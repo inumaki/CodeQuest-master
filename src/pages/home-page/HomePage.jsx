@@ -9,7 +9,13 @@ const HomePage = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchPosts());
+
+//  const [Editorial,SetEditorial]=usestate(arr[]);    
+// do a network call from firebase and set the result in editorial state
+
   }, []);
+
+  
 
   return (
     <div>
@@ -20,7 +26,8 @@ const HomePage = () => {
           <Loader />
         </div>
       )} */}
-      {posts
+      {posts 
+      // use the editorial state to map over the editorial fetched from the firebase above
         .filter((post) => post.username === user.username)
         .map(({ _id, content, username, fullname, comments, profileImage }) => (
           <Post

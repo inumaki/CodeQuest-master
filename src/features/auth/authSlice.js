@@ -31,6 +31,7 @@ const authSlice = createSlice({
       .addCase(loginUser.fulfilled, (state, action) => {
         state.status = STATUSES.IDLE;
         if (action.payload === undefined) {
+          console.log("not able to login");
           return;
         }
         state.token = action.payload.encodedToken;
@@ -82,8 +83,10 @@ export const loginUser = createAsyncThunk(
       });
       return res.data;
     } catch (error) {
+      console.log(error);
       if (error.response.status === 404) {
         toast.error("Invalid User, not found");
+        
       }
       if (error.response.status === 401) {
         toast.error("Wrong password");

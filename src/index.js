@@ -45,7 +45,7 @@ ReactDOM.render(
               }
             />
             <Route
-              path="explore"
+              path="Editorial"
               element={
                 <RequireAuth>
                   <ExplorePage />
