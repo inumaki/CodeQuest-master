@@ -1,6 +1,6 @@
 import { v4 as uuid } from "uuid";
 import { formatDate } from "../utils/authUtils";
-import { vishalGaurav, bhavishAggarwal ,tanayPratap} from "../utils/images";
+import { vishalGaurav,aryan,striver,babbar ,tanayPratap} from "../utils/images";
 
 /**
  * Posts can be added here.
@@ -22,16 +22,16 @@ export const posts = [
     },
     username: "aryankatiyar",
     fullname: "Aryan Katiyar",
-    profileImage: vishalGaurav,
+    profileImage: aryan,
     createdAt: formatDate(),
     updatedAt: formatDate(),
     comments: [
       {
         _id: uuid(),
-        username: "bhash",
-        profileImage: bhavishAggarwal,
-        fullName:"Bhavish Aggarwal",
-        text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque ",
+        username: "striver",
+        profileImage:striver,
+        fullName:"striverSingh",
+        text: "This is really difficult for me , to be honest , I wish I would be able to solve it ",
         votes: {
           upvotedBy: [],
           downvotedBy: [],
@@ -39,10 +39,10 @@ export const posts = [
       },
       {
         _id: uuid(),
-        username: "tanaypratap",
-        fullName:"Tanay Pratap",
-        profileImage: tanayPratap,
-        text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque ",
+        username: "babbar",
+        fullName:"hate babbar",
+        profileImage: babbar,
+        text: "what does this mean? (-1+1) mingThe points awarded for this operation is (-1+1) ming",
         votes: {
           upvotedBy: [],
           downvotedBy: [],
@@ -60,8 +60,8 @@ export const posts = [
       dislikedBy: [],
     },
     username: "bhash",
-    fullname: "Bhavish Aggarwal",
-    profileImage: bhavishAggarwal,
+    fullname: "striversingh",
+    profileImage:striver,
     comments: [
       {
         _id: uuid(),
