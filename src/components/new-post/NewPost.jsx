@@ -67,7 +67,7 @@ const NewPost = () => {
           fontSize="40px"
           modules={noModules}
           onChange={(e) => setText(e)}
-          placeholder={"What's on your mind?"}
+          placeholder={"Want to post editorial?"}
           ref={inputReference}
         />
       </div>

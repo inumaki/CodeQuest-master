@@ -1,3 +1,6 @@
+import { db } from "./firebase.js";
+import { collection, getDocs } from "firebase/firestore";
+
 import {
   NavigationAside,
   NavigationBottom,
@@ -10,11 +13,19 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchBookmarks } from "./features/bookmark/bookmarkSlice";
 import { fetchUsers } from "./features/user/userSlice";
+import { ConstructionOutlined } from "@mui/icons-material";
+
+
+
 
 function App() {
   const dispatch = useDispatch();
   const { token } = useSelector((store) => store.auth);
   const [darkMode, setDarkMode] = useState(false);
+
+  const [editorial, setEditorial] = useState([]);
+  const editorialCollectionRef = collection(db, "editorial");
+
 
   useEffect(() => {
     if (token) {
@@ -43,6 +54,9 @@ function App() {
       root.classList.remove("dark");
     }
   }, [darkMode]);
+
+ 
+
 
   return (
     <div
