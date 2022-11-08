@@ -1,6 +1,6 @@
 import { v4 as uuid } from "uuid";
 import { formatDate } from "../utils/authUtils";
-import { vishalGaurav,aryan,striver,babbar ,tanayPratap} from "../utils/images";
+import { aman,anuj,vishalGaurav,aryan,striver,babbar,tanayPratap} from "../utils/images";
 
 /**
  * Posts can be added here.
@@ -76,9 +76,9 @@ export const posts = [
       },
       {
         _id: uuid(),
-        username: "tanaypratap",
-        fullName:"Tanay Pratap",
-        profileImage: tanayPratap,
+        username: "aman",
+        fullName:"amansis",
+        profileImage: aman,
         text: "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe!",
         votes: {
           upvotedBy: [],
