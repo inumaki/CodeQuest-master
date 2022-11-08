@@ -1,6 +1,6 @@
 import { v4 as uuid } from "uuid";
 import { formatDate } from "../utils/authUtils";
-import { vishalGaurav, tanayPratap, bhavishAggarwal } from "../utils/images";
+import { aryan,vishalGaurav, tanayPratap, bhavishAggarwal } from "../utils/images";
 /**
  * User Database can be added here.
  * You can add default users of your wish with different attributes
@@ -17,7 +17,7 @@ export const users = [
     createdAt: formatDate(),
     updatedAt: formatDate(),
     bio: "computer science student",
-    profileImage: vishalGaurav,
+    profileImage: aryan,
     backgroundImage: `https://res.cloudinary.com/dwqdlzlek/image/upload/v1654089074/shashi_maurya_background_jcg8bi.jpg`,
     website: `github.com/vishalg8454`,
     followers: [
